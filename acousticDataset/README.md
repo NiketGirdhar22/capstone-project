@@ -28,7 +28,7 @@ Other approaches (classifiers, supervised CNNs) require labeled abnormal data an
 - File-level reconstruction error used as anomaly score
 
 ### Results
-- Mean ROC-AUC ≈ **0.60–0.63**
+- Mean ROC-AUC ≈ **~0.59**
 
 ### Limitations
 - Strong overlap between normal and abnormal score distributions
@@ -49,7 +49,7 @@ This phase established a working baseline but revealed the need for temporal mod
 - File-level score aggregated from window scores
 
 ### Results
-- ROC-AUC remained ≈ **0.60**
+- ROC-AUC remained ≈ **~0.59**
 
 ### Limitations
 - Training and inference distributions were misaligned
@@ -70,7 +70,7 @@ This phase confirmed that **temporal resolution alone is insufficient** without 
 
 ### Results
 - Strong performance for some assets (AUC > 0.85)
-- Weak performance for others (AUC ≈ 0.55–0.60)
+- Weak performance for others (AUC ≈ 0.49–0.84)
 - Mean ROC-AUC ≈ **0.62**
 
 ### Limitations
@@ -92,9 +92,9 @@ This phase demonstrated that **asset-aware modeling is necessary but not suffici
 ### Results
 | Asset | ROC-AUC |
 |------|--------|
-| id_00 | ~0.59 |
+| id_00 | ~0.62 |
 | id_02 | ~0.95 |
-| id_04 | ~0.82 |
+| id_04 | ~0.78 |
 | id_06 | ~0.96 |
 | **Mean** | **~0.83** |
 
