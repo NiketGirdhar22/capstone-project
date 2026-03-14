@@ -1,0 +1,4 @@
+# Ignore large training data
+telemetryDataset/processed_data/*.npy
+telemetryDataset/processed_data/*.pkl
+
